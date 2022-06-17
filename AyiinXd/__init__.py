@@ -314,9 +314,9 @@ while 0 < 6:
     if _BLACKLIST.status_code != 200:
         if 0 != 5:
             continue
-        blacklistalby = []
+        blacklistayiin = []
         break
-    blacklistalby = _BLACKLIST.json()
+    blacklistayiin = _BLACKLIST.json()
     break
 
 del _BLACKLIST
@@ -342,7 +342,7 @@ del _WHITELIST
 if STRING_SESSION:
     session = StringSession(str(STRING_SESSION))
 else:
-    session = "ALBY-Userbot"
+    session = "AyiinUserBot"
 try:
     bot = TelegramClient(
         session=session,
