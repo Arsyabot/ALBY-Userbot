@@ -1064,7 +1064,7 @@ Voice chat group menu untuk [{user.first_name}](tg://user?id={user.id})
                                  buttons=[
                                      [
                                          Button.inline("❖ ʙᴛᴘᴍ ❖",
-                                                       data="btpmayiin"),
+                                                       data="btpmayiin")],
                                      [custom.Button.inline(
                                          "ʙᴀᴄᴋ", data="gcback")],
                                  ]
