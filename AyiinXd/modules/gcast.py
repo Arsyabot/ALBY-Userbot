@@ -48,7 +48,7 @@ heroku_api = "https://api.heroku.com"
 blchat = os.environ.get("BLACKLIST_GCAST") or ""
 
 
-@ayiin_cmd(pattern="gcast?(.*)", allow_sudo=False)
+@ayiin_cmd(pattern="gcast(?: |$)(.*)")
 async def gcast(event):
     if xx := event.pattern_match.group(1):
         msg = xx
